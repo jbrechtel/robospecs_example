@@ -12,7 +12,13 @@ class RobospecsExample(info: ProjectInfo) extends ParentProject(info) {
 
   class MainProject(info: ProjectInfo) extends AndroidProject(info) with Defaults with MarketPublish {
     val keyalias  = "change-me"
-    val scalatest = "org.scalatest" % "scalatest" % "1.2" % "test"
+    val robospecs = "com.github.jbrechtel" %% "robospecs" % "0.1-SNAPSHOT" % "test"
+    val robospecsSnapshots  = "snapshots" at "http://jbrechtel.github.com/repo/snapshots"
+    val snapshots = "snapshots" at "http://scala-tools.org/repo-snapshots"
+    val releases  = "releases" at "http://scala-tools.org/repo-releases"
+
+    def specs2Framework = new TestFramework("org.specs2.runner.SpecsFramework")
+    override def testFrameworks = super.testFrameworks ++ Seq(specs2Framework)
   }
 
   class TestProject(info: ProjectInfo) extends AndroidTestProject(info) with Defaults

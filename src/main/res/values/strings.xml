@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RobospecsExample</string>
+    <string name="message_hint">Toast Message</string>
+    <string name="show_message">Show Message</string>
 </resources>
