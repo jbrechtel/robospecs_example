@@ -15,7 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int message=0x7f050000;
-        public static final int post_message=0x7f050001;
+        public static final int show_message=0x7f050001;
     }
     public static final class layout {
         public static final int activity=0x7f030000;

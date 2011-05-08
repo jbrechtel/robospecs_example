@@ -10,7 +10,7 @@
               android:layout_height="wrap_content"
               android:hint="@string/message_hint"/>
 
-    <Button android:id="@+id/post_message"
+    <Button android:id="@+id/show_message"
             android:text="@string/show_message"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"/>
